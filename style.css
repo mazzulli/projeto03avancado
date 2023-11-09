@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, select, textarea, button {
+    font-family: 'Poppins', sans-serif;    
+}
+
+body {    
+    background: #BFD7E4;
+    padding-bottom: 100px;
+}
+
+body::before {
+    content: '';
+    background: #293241;
+    width: 100%;
+    height: 465px;
+    top: 0;
+    left: 0;
+    z-index: -1;    
+    position: absolute;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapper {
+    width: 750px;
+    border: none;
+    margin: 107px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-wrapper p, h1 {
+    color:#FFFFFF ;
+}
+
+.header-wrapper h1 {
+    font-size: 36px;
+}
+
+.header-wrapper p {
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 133px;
+    width: 750px;
+    
+
+    background: #F67669;
+    border: none;
+    border-radius: 20px 20px 0 0;      
+    
+}
+
+.form-header h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;    
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+header h1, fieldset h1, legend {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;    
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+form {
+    margin: auto;
+    width: 750px;
+    background: #FFFFFF;
+    min-height: 300px;
+    border-radius: 0 0 20px 20px;
+}
+
+.fieldset-wrapper {
+    padding: 32px 64px 0;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    color: #253B51;
+    text-align: center;
+    border-bottom: #E6E6F0 1px solid;    
+    text-transform: uppercase;
+
+    width: 100%;
+    margin: 32px auto;
+    padding: 8px;
+}
+
+fieldset label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4E4958; 
+}
+
+input, select, textarea {
+    border: solid 1px;
+    border-color: #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;
+    
+    height: 55px;
+    margin-bottom: 16px;    
+}
+
+select {
+    width: 300px;
+}
+
+textarea {
+    height: 166px;
+}
+
+.col-2 {
+    display: flex;    
+    gap: 22px;    
+    align-content: space-between;
+}
+
+.col-2 .input-wrapper {
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;    
+    gap: 8px;
+}
+
+
+.checkbox-wrapper {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    gap: 8px;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    display: block;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2603_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2603_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+#mentorship-check {    
+    width: 24px;
+    height: 24px;
+    
+    display: flex;
+    flex-direction: row;
+    border: #E6E6F0 solid 1px;
+    border-radius: 8px;
+    background: #FAFAFC;
+    
+}
+
+.col-3 {
+    display: flex;
+    gap: 32px;    
+}
+
+#scheduling-date {
+    width: 300px;
+}
+
+.col-3 .input-wrapper{
+    width: 100%;
+}
+
+form div >fieldset:nth-child(1) legend {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrapper {    
+    padding: 64px 0;
+}
+
+.button {
+    width: 100%;
+    background: #F67669;
+    color: #FFFFFF;
+    font-family: 'Staatliches',sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-wrapper input:hover {
+    background: #f44633;
+}
+
